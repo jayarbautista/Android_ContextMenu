@@ -29,7 +29,6 @@ public class ContextMenuActivity extends Activity {
 		mColor = (TextView)findViewById(R.id.textViewColor);
 		mSize = (TextView)findViewById(R.id.textViewSize);
 		
-		//mColor.setOnCreateContextMenuListener(this); equivalent to the next line
 		registerForContextMenu(mColor); 
 		registerForContextMenu(mSize);
 	}
@@ -37,7 +36,6 @@ public class ContextMenuActivity extends Activity {
 	@Override
 	public void onCreateContextMenu(ContextMenu menu, View v,
 			ContextMenuInfo menuInfo) {
-		// TODO Auto-generated method stub
 		
 		switch(v.getId()){
 		case R.id.textViewColor:
@@ -56,7 +54,6 @@ public class ContextMenuActivity extends Activity {
 
 	@Override
 	public boolean onContextItemSelected(MenuItem item) {
-		// TODO Auto-generated method stub
 		switch (item.getItemId()) {
 		// menu items for mColor
 		case MENU_COLOR_RED:
