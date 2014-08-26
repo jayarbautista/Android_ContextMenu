@@ -13,13 +13,13 @@ public class ContextMenuActivity extends Activity {
 	TextView mColor;
 	TextView mSize;
 	
-	final int MENU_COLOR_RED = 1;
-	final int MENU_COLOR_GREEN = 2;
-	final int MENU_COLOR_YELLOW = 3;
+	private static final int MENU_COLOR_RED = 1;
+	private static final int MENU_COLOR_GREEN = 2;
+	private static final int MENU_COLOR_YELLOW = 3;
 
-	final int MENU_SIZE_24 = 4;
-	final int MENU_SIZE_27 = 5;
-	final int MENU_SIZE_30 = 6;
+	private static final int MENU_SIZE_24 = 4;
+	private static final int MENU_SIZE_27 = 5;
+	private static final int MENU_SIZE_30 = 6;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
